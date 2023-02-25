@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//random number between 1000 to 2000;
+        let random=(n)=>{
+            let randomNumber=[];
+            for(let i=1;i<=n;i++){
+                randomNumber.push(Math.floor((Math.random()*(2000-1000))+1000));
+                //Math.floor() function is used to round down the result to the nearest integer.
+           
+            }
+            return randomNumber;
+        }
+        let num=random(5);
+        console.log(num);
+    </script>
+</body>
+</html>
